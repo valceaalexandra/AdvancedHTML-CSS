@@ -1,11 +1,11 @@
 .box1 {
     width: 300px;
     height: 300px;
+    background-color: blue;
     border-top-left-radius: 100px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 50px;
-    background-color: blue;
 }
 
 .box2 {
@@ -13,4 +13,12 @@
     height: 300px;
     background-color: coral;
     border-radius: 20px;
+}
+
+.box3 {
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 10px 15px 25px 20px;
+    /* border-radius: top-left top-right bottom-right bottom-left; */
 }
