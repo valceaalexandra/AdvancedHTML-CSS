@@ -4,15 +4,15 @@
         url('./fonts/Amorlate.ttf') format('truetype');
     /* 
         Link font: https://www.dafont.com/de/amorlate.font
+        Place the font in fonts folder.
         Some browsers do not support .otf files well. 
         It's best to provide multiple font formats (.woff2, .woff, .ttf) 
         for better compatibility.
 
-        The WOFF2 format (format('woff2')) is recommended 
-        for modern web usage because it has:
-
-        Better Compression & Faster Loading
-        Best Browser Support
+        The WOFF2 format (format('woff2')) is recommended  for modern web 
+        usage because it has:
+            Better Compression & Faster Loading
+            Best Browser Support.
     */
 }
 
