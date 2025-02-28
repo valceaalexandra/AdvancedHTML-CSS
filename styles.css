@@ -1,0 +1,114 @@
+/* Both animations and transitions help create smooth effects in CSS, but they have different purposes and functionalities.
+    transition is used for smooth state changes when an element's property changes, usually triggered by hover, focus, or JavaScript events.
+        Key Features of transition:
+        Requires a trigger (e.g., :hover, :focus, JavaScript changes).
+        Can only animate between two states (e.g., from width: 100px; to width: 200px;).
+        Short and simple for quick effects. 
+    animation allows more complex movement with multiple states using @keyframes. It does not require a trigger and can loop automatically.
+        Key Features of animation:
+        Does not need user interaction (can start automatically).
+        Can animate across multiple states (e.g., @keyframes from 0% to 100%).
+        Supports loops, delays, and playback control. 
+*/
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: fadeAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeAnimation {
+    /* 0% = Start of animation. */
+    0% { 
+        opacity: 0;
+    }
+    /* 100% = End of animation. */
+    /* You can add more percentages (25%, 50%, 75%) for detailed animations. */
+    100% {
+        opacity: 1;
+    }
+}
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: moveAnimation 5s linear infinite alternate;
+}
+
+@keyframes moveAnimation {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 300px;
+    }
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.div4 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    animation: scaleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.div5 {
+    width: 100px;
+    height: 100px;
+    animation: colorChange 4s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+.div6 {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
