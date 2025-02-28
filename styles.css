@@ -1,18 +1,6 @@
 
-.item1 {
-    height: 80px;
-    width: 150px;
-    background: teal;
-    display: block;
-}
 
-.item2 {
-    height: 80px;
-    width: 150px;
-    background: cyan;
-}
-
-.item3 {
+.item {
     height: 80px;
     width: 150px;
     background: green;
@@ -22,8 +10,16 @@
 .container {
     text-align: center;
     display: flex;
-    flex-direction: row; /* the default value */
-    flex-direction: column;
-    flex-direction: row-reverse;
-    flex-direction: column-reverse;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
 }
