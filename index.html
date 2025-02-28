@@ -8,62 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<!-- order permite schimbarea ordinii elementelor in Flexbox fara a modifica HTML-ul.
+    Valori mai mici apar primele, valori mai mari apar mai tarziu.
+    Este util pentru rearanjarea elementelor in functie de nevoi (responsive design, UX). 
+-->
+
 <body>
     <div class="container no-wrap">
-        <div class="item">Box 1 </div>
-        <div class="item">Box 2</div>
-        <div class="item">Box </div>
-        <div class="item">Box 4</div>
-        <div class="item">Box 5</div>
-        <div class="item">Box 6</div>
-        <div class="item">Box 7</div>
-        <div class="item">Box 8</div>
-        <div class="item">Box 9</div>
-        <div class="item">Box 10</div>
-        <div class="item">Box 11</div>
-        <div class="item">Box 12</div>
-        <div class="item">Box 1</div>
-        <div class="item">Box 14</div>
-        <div class="item">Box 15</div>
-        <div class="item">Box 16</div>
-    </div>
-    <br>
-    <div class="container wrap">
-        <div class="item">Box 1 </div>
-        <div class="item">Box 2</div>
-        <div class="item">Box </div>
-        <div class="item">Box 4</div>
-        <div class="item">Box 5</div>
-        <div class="item">Box 6</div>
-        <div class="item">Box 7</div>
-        <div class="item">Box 8</div>
-        <div class="item">Box 9</div>
-        <div class="item">Box 10</div>
-        <div class="item">Box 11</div>
-        <div class="item">Box 12</div>
-        <div class="item">Box 1</div>
-        <div class="item">Box 14</div>
-        <div class="item">Box 15</div>
-        <div class="item">Box 16</div>
-    </div>
-    <br>
-    <div class="container wrap-reverse">
-        <div class="item">Box 1 </div>
-        <div class="item">Box 2</div>
-        <div class="item">Box </div>
-        <div class="item">Box 4</div>
-        <div class="item">Box 5</div>
-        <div class="item">Box 6</div>
-        <div class="item">Box 7</div>
-        <div class="item">Box 8</div>
-        <div class="item">Box 9</div>
-        <div class="item">Box 10</div>
-        <div class="item">Box 11</div>
-        <div class="item">Box 12</div>
-        <div class="item">Box 1</div>
-        <div class="item">Box 14</div>
-        <div class="item">Box 15</div>
-        <div class="item">Box 16</div>
+        <div class="item" style="order: 3">1</div>
+        <div class="item" style="order: 2">2</div>
+        <div class="item" style="order: 4">3</div>
+        <div class="item" style="order: 1">4</div>
+
     </div>
 </body>
 
