@@ -9,7 +9,103 @@
 </head>
 
 <body>
-    <p>Simple text</p>
+    <!-- first child pseudo element -->
+    <div>
+        <p>This paragraph will be red.</p>
+        <p>This one won't be affected.</p>
+        <p>This one won't be affected.</p>
+    </div>
+    <br>
+    <div>
+        <h1>Heading</h1>
+        <span>This span will NOT be blue.</span>
+    </div>
+
+    <!-- only child pseudo element -->
+    <div>
+        <p>This paragraph is the only child, so it gets a yellow background.</p>
+    </div>
+    <br>
+    <div>
+        <p>This paragraph will NOT be green.</p>
+        <span>Because there are two children.</span>
+    </div>
+
+
+    <!-- last child pseudo element -->
+
+    <div>
+        <span>Acest paragraf nu va fi afectat.</span>
+        <br>
+        <span>Acest paragraf va fi roz.</span>
+    </div>
+    <br>
+    <div>
+        <span>Acest span nu va fi roz.</span>
+        <p>Acest element este ultimul, nu span.</p>
+    </div>
+
+
+    <!-- :nth-child pseudo element -->
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+
+    <!-- :nth-last-child pseudo element -->
+    <ol>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li> <!-- Acesta va fi rosu -->
+        <li>Element 5</li>
+    </ol>
+
+    <!-- first-of-type pseudo element -->
+    <div>
+        <h1>Title</h1>
+        <p>Bold.</p>
+        <p>Normal.</p>
+    </div>
+
+    <!-- nth-of-type pseudo element -->
+    <div>
+        <p>Acest paragraf nu este afectat.</p>
+        <h1>Acesta nu este numarat.</h1>
+        <p>Acest paragraf va fi rosu.</p>
+    </div>
+
+    <!-- only-of-type pseudo element -->
+    <div>
+        <p>Paragraf</p>
+        <span>Acest span va fi bold.</span>
+    </div>
+
+    <div>
+        <span>Acest span nu va fi afectat.</span>
+        <span>Exista mai multe span aici.</span>
+    </div>
+
+    <!-- last-of-type pseudo element -->
+    <div>
+        <p>Acest paragraf nu este afectat.</p>
+        <h1>Acesta nu este numarat.</h1>
+        <p>Acest paragraf va fi rosu.</p>
+    </div>
+
+    <!-- :empty pseudo element -->
+    <div></div> <!-- Acest div devine gri -->
+    <div>Text</div>
+    <div> <span>Element copil</span> </div>
+
+    <!-- :not pseudo element -->
+    <!-- Toate <p> devin albastre, cu exceptia celor care au clasa .exclude. -->
+        
+    <p>Acest text va fi albastru.</p>
+    <p class="exclude">Acest text NU va fi afectat.</p>
+    <p>Acest text va fi albastru.</p>
+
 </body>
 
 </html>

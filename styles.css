@@ -1,0 +1,57 @@
+p:first-child {
+    color: red;
+}
+
+span:first-child {
+    color: blue;
+}
+
+p:only-child {
+    background: yellow;
+}
+
+p:only-child {
+    color: green;
+}
+
+span:last-child {
+    color: pink;
+}
+
+li:nth-child(2) {
+    font-weight: bold;
+}
+
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+li:nth-last-child(2) {
+    color: red;
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+p:nth-of-type(2) {
+    color: red;
+}
+
+span:only-of-type {
+    font-weight: bold;
+}
+
+p:last-of-type {
+    color: red;
+}
+
+div:empty {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+p:not(.exclude) {
+    color: blue;
+}
