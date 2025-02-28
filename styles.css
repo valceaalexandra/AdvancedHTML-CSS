@@ -1,0 +1,18 @@
+div::before {
+    content: "Start - ";
+    color: green;
+    font-weight: bold;
+}
+
+div::after {
+    content: " - End";
+    color: red;
+    font-weight: bold;
+}
+
+label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
