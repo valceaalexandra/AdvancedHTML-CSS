@@ -1,0 +1,68 @@
+.div1 {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    transition: all 1s ease-in-out 0.2s;
+}
+
+.div1:hover {
+    width: 150px;
+    background-color: #ff0000;
+}
+
+.div2 {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    transition: transform 0.8s ease-in-out;
+}
+
+.div2:hover {
+    transform: rotate(360deg);
+}
+
+.div3 {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    transition: border-radius 0.5s ease-in-out;
+}
+
+.div3:hover {
+    border-radius: 50%;
+}
+
+.div4 {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    transition: all 0.7s ease-in-out;
+}
+
+.div4:hover {
+    width: 200px;
+    transform: translateX(50px);
+    background-color: #ffcc00;
+}
+
+.div5 {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.div5:hover {
+    opacity: 0;
+}
+
+.div6 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, blue, purple);
+    transition: background 1s ease-in-out;
+}
+
+.div6:hover {
+    background: linear-gradient(to right, red, yellow);
+}
