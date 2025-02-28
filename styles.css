@@ -21,10 +21,9 @@
 
 .container {
     text-align: center;
-    display: flex; /* change this to inline-flex; */
-}
-
-.container-inline {
-    text-align: center;
-    display: inline-flex; /* change this to inline-flex; */
+    display: flex;
+    flex-direction: row; /* the default value */
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
 }
