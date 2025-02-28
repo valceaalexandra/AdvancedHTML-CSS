@@ -1,0 +1,30 @@
+
+.item1 {
+    height: 80px;
+    width: 150px;
+    background: teal;
+    display: block;
+}
+
+.item2 {
+    height: 80px;
+    width: 150px;
+    background: cyan;
+}
+
+.item3 {
+    height: 80px;
+    width: 150px;
+    background: green;
+    display: block;
+}
+
+.container {
+    text-align: center;
+    display: flex; /* change this to inline-flex; */
+}
+
+.container-inline {
+    text-align: center;
+    display: inline-flex; /* change this to inline-flex; */
+}
