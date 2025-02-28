@@ -5,6 +5,7 @@
     width: 150px;
     background: green;
     display: block;
+    border: 1px solid black;
 }
 
 .container {
@@ -23,3 +24,9 @@
 .wrap-reverse {
     flex-wrap: wrap-reverse;
 }
+
+
+.item-1 { flex-grow: 2; } /* 2 parti din spatiul ramas */
+.item-2 { flex-grow: 5; } /* 5 parti din spatiul ramas */
+.item-3 { flex-grow: 3; } /* 3 parti din spatiul ramas */
+.item-4 { flex-grow: 4; } /* 4 parti din spatiul ramas */
