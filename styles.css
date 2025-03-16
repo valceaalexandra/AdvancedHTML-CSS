@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    border: 2px solid black;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.item-inline{
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.container-inline{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+}
