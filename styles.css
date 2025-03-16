@@ -1,12 +1,19 @@
 .container {
     display: grid;
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 100px 200px 100px;
     border: 2px solid black;
+    grid-template:
+        "header header header" 100px
+        "sidebar content content" 200px
+        "footer footer footer" 100px
+        / 150px 1fr 1fr;
+    /*  The same as:
+    grid-template-columns: 150px 1fr fr;
+    grid-template-rows: 100px 200px 100px;
     grid-template-areas:
         "header header header"
         "sidebar content content"
-        "footer footer footer";
+        "footer footer footer"; 
+    */
 }
 
 .item {
@@ -20,17 +27,17 @@
     background-color: cyan;
 }
 
-.sidebar{
+.sidebar {
     grid-area: sidebar;
     background-color: cadetblue;
 }
 
-.content{
+.content {
     grid-area: content;
     background-color: salmon;
 }
 
-.footer{
+.footer {
     grid-area: footer;
     background-color: yellow;
 }
