@@ -1,12 +1,36 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
     grid-template-rows: 100px 200px 100px;
     border: 2px solid black;
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
 }
 
-.item{
+.item {
     background-color: lightblue;
     padding: 20px;
     border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+    background-color: cyan;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: cadetblue;
+}
+
+.content{
+    grid-area: content;
+    background-color: salmon;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: yellow;
 }
