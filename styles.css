@@ -1,20 +1,15 @@
 .container {
     display: grid;
     border: 2px solid black;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 100px;
 
-    grid-auto-columns: 200px; /* fiecare coloana noua o sa aiba 200px; */
-    grid-auto-rows: 80px; /* fiecare rand nou o sa aiba 80px */
+    grid-auto-flow: row;
+    width: 500px;
 }
 
 .item {
     background-color: lightblue;
     padding: 20px;
     border: 1px solid black;
-}
-
-.item-auto{
-    grid-column: 4; /* pe a patra coloana */
-    grid-row: 2; /* pe randul al doilea */
 }
