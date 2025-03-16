@@ -1,11 +1,11 @@
 .container {
     display: grid;
     border: 2px solid black;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 80px 80px;
 
-    grid-auto-flow: row;
-    width: 500px;
+    column-gap: 10px;
+    row-gap: 25px;
 }
 
 .item {
